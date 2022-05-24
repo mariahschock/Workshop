@@ -1,9 +1,19 @@
-import { checkAuth, deleteParticipant, getWorkshops, logout } from '../fetch-utils.js';
+import { checkAuth, deleteParticipant, getWorkshops, logout, getUser } from '../fetch-utils.js';
 import { renderWorkshop } from '../render-utils.js';
 
 checkAuth();
 
 const logoutButton = document.getElementById('logout');
+const registerButton = document.getElementById('new-student');
+
+registerButton.addEventListener('click', () => {
+    const user = getUser();
+    if (user) {
+        return location.assign('/create');
+    } else {
+        return location.assign('/workshops');
+    }
+});
 
 logoutButton.addEventListener('click', () => {
     logout();

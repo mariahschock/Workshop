@@ -30,3 +30,14 @@ h1 {
     font-family: 'Harry Potter', sans-serif;
     font-size: 3rem;
 }
+button {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 5px;
+}
+button:hover {
+    opacity: 0.85;
+}
+.gutter-right {
+    margin: 20px;
+}
