@@ -1,0 +1,26 @@
+.workshop {
+    width: 75vw;
+    border: 3px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.workshop li {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:fit-content;
+}
+
+header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 3rem;
+}
