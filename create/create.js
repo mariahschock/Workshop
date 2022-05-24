@@ -1,6 +1,8 @@
-import { createParticipant } from '../fetch-utils.js';
+import { createParticipant, getWorkshops } from '../fetch-utils.js';
+import { renderOption } from '../render-utils.js';
 
 const participantForm = document.getElementById('new-participant');
+const workshopSelect = document.getElementById('workshops');
 
 participantForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -13,3 +15,12 @@ participantForm.addEventListener('submit', async (e) => {
     });
     window.location.href = '/workshops';
 });
+
+async function onLoad() {
+    const workshops = await getWorkshops();
+    for (let workshop of workshops) {
+        const workshopOption = renderOption(workshop);
+        workshopSelect.append(workshopOption);
+    }
+}
+onLoad();
