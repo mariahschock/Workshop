@@ -12,6 +12,9 @@
     justify-content: space-between;
     width:fit-content;
 }
+.workshop li:hover {
+    cursor: pointer;
+}
 
 header {
     margin: 10px;

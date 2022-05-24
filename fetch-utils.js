@@ -45,6 +45,14 @@ export async function getWorkshops() {
         return resp.data;
     }
 }
+export async function createParticipant(participant) {
+    const resp = await client.from('participants').insert(participant);
+    if (resp.error) {
+        console.error(resp.error.message);
+    } else {
+        return resp.data;
+    }
+}
 
 // function checkError({ data, error }) {
 //     return error ? console.error(error) : data;
