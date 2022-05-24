@@ -54,6 +54,15 @@ export async function createParticipant(participant) {
     }
 }
 
+export async function deleteParticipant(id) {
+    const resp = await client.from('participants').delete().eq('id', id);
+    if (resp.error) {
+        console.error(resp.error.message);
+    } else {
+        return resp.data;
+    }
+}
+
 // function checkError({ data, error }) {
 //     return error ? console.error(error) : data;
 // }
