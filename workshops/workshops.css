@@ -52,9 +52,9 @@ header {
 
 h1 {
     font-family: 'Harry Potter', sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     color: rgba(237,174,1,0.5676864495798319);
-    text-shadow: 3px black;
+    text-shadow: 3px rgb(144, 90, 9);
 }
 button {
     font-size: 2rem;

@@ -1,3 +1,47 @@
+body {
+    background: rgb(110,110,110);
+    background: radial-gradient(circle, rgba(110,110,110,1) 22%, rgba(0,0,0,1) 73%);
+}
 h1 {
     font-family: 'Harry Potter', sans-serif;
+    font-size: 4em;
+    color: rgba(237,174,1,0.5676864495798319);
+    text-shadow: 3px rgb(144, 90, 9);
+}
+#new-participant {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    display: block;
+    position: relative;
+    border: 3px solid black;
+    background: rgb(73,43,0);
+    background: linear-gradient(90deg, rgba(73,43,0,1) 0%, rgba(237,174,1,0.5676864495798319) 45%);
+    background-repeat: no-repeat;
+    padding: 40px 60px;
+    max-width: 800px;
+    width: 70%;
+    margin: 100px auto 0;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 1.5rem;
+}
+.link {
+    text-align: center;
+    margin: 40px;
+}
+a {
+    color: rgba(237,174,1,0.5676864495798319); 
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
 }
