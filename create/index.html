@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <link rel ="stylesheet" href="./create.css">
+    <title>Course Sign Up</title>
+</head>
+<body>
+    <h1>Choose your course</h1>
+    <form id="new-participant">
+        <label for="name">Name: <input type="text" name="name" /></label>
+        <label for="contact"> Contact: <input type="text" name="contact" /></label>
+        <select name="workshop_id" id="workshops"></select>
+        <button>Submit</button>
+    </form>
+    <div class="link"><a href="/workshops/">View Courses</a></div>
+<script type="module" src="./create.js"></script>
+</body>
+</html>
